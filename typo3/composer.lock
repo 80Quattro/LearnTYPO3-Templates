@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e38d3aed3f17f9ee095a3ffe43711bd",
+    "content-hash": "1b9032716e01895f709a217073c0f746",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2253,6 +2253,41 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rjania/car-workshop-sitepackage",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./local_packages/car_workshop_sitepackage",
+                "reference": "031ab687d5392dc9bc4592431a973f354ededad4"
+            },
+            "require": {
+                "typo3/cms-core": "^11.5",
+                "typo3/cms-fluid-styled-content": "^11.5",
+                "typo3/cms-rte-ckeditor": "^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "car_workshop_sitepackage"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rjania\\CarWorkshopSitepackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "homepage": "https://github.com/80Quattro",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -7021,7 +7056,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rjania/car-workshop-sitepackage": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,0 +1,23 @@
+{
+    "name": "rjania/car-workshop-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "homepage": "https://github.com/80Quattro",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-rte-ckeditor": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rjania\\CarWorkshopSitepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "car_workshop_sitepackage"
+        }
+    }
+}
