@@ -3,7 +3,26 @@
 
     <f:render partial="Header" arguments="{mainnavigation:mainnavigation}" />
 
-    <p>DEFAULT TEMPLATE (HOME PAGE)</p>
+    <main>
+        <section id="contact" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">
+                            <f:format.raw>{content0}</f:format.raw>
+                        </h2>
+                        <hr>
+                        <f:format.raw>{content1}</f:format.raw>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <f:format.raw>{content2}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <f:render partial="Footer"/>
 
