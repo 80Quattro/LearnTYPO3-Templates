@@ -1,0 +1,83 @@
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <f:render partial="Header" arguments="{mainnavigation:mainnavigation}" />
+
+    <main>
+        <section id="hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h1 class="display-4">Expert Car Care You Can Trust</h1>
+                <p class="lead">We offer a wide range of services to
+                  keep your car running smoothly and looking great</p>
+                <a href="#services" class="btn btn-primary btn-lg">Learn
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Services</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="service-box">
+                  <i class="fa fa-wrench"></i>
+                  <f:format.raw>{content0}</f:format.raw>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <i class="fa fa-paint-brush"></i>
+                  <f:format.raw>{content1}</f:format.raw>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <i class="fa fa-cogs"></i>
+                  <f:format.raw>{content2}</f:format.raw>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Us</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <f:format.raw>{content3}</f:format.raw>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <f:link.page pageUid="4" class="btn btn-primary big-button">Contact Us!</f:link.page>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    <f:render partial="Footer"/>
+
+</f:section>

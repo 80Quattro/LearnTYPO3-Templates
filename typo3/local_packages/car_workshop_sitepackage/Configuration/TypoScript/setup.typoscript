@@ -47,6 +47,20 @@ page {
             }
             ifEmpty = Default
         }
+
+        variables {
+            content0 < styles.content.get
+            
+            content1 < styles.content.get
+            content1.select.where = colPos = 1
+
+            content2 < styles.content.get
+            content2.select.where = colPos = 2
+
+            content3 < styles.content.get
+            content3.select.where = colPos = 3
+        }
+
         templateRootPaths {
             0 = EXT:car_workshop_sitepackage/Resources/Private/Templates/Page/
             1 = {$page.fluidtemplate.templateRootPath}
