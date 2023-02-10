@@ -59,6 +59,15 @@ page {
 
             content3 < styles.content.get
             content3.select.where = colPos = 3
+
+            content4 < styles.content.get
+            content4.select.where = colPos = 4
+
+            content5 < styles.content.get
+            content5.select.where = colPos = 5
+
+            content6 < styles.content.get
+            content6.select.where = colPos = 6
         }
 
         templateRootPaths {
