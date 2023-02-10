@@ -222,3 +222,6 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+lib.footer < styles.content.get
+lib.footer.select.pidInList = 5
