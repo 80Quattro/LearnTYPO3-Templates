@@ -1,19 +1,29 @@
 <f:layout name="Default" />
 <f:section name="Main">
 
-    <div style="background-color: yellow; padding: 0.5em 1em;">
-        <dl>
-            <dt>Template file</dt>
-            <dd>
-                <code>typo3conf/ext/car_workshop_sitepackage/Resources/Private/Templates/Page/Default.html</code>
-            </dd>
-            <dt>Backend Configuration</dt>
-            <dd>
-                <code>typo3conf/ext/car_workshop_sitepackage/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/default.tsconfig</code>
-            </dd>
-        </dl>
-    </div>
+    <f:render partial="Header" arguments="{mainnavigation:mainnavigation}" />
 
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+    <main>
+        <section id="contact" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">
+                            <f:format.raw>{content0}</f:format.raw>
+                        </h2>
+                        <hr>
+                        <f:format.raw>{content1}</f:format.raw>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <f:format.raw>{content2}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <f:render partial="Footer"/>
 
 </f:section>

@@ -1,0 +1,39 @@
+mod.web_layout.BackendLayouts {
+  HomePage {
+    title = Home Page
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Services Left
+                colPos = 0
+              }
+              2 {
+                name = Services Middle
+                colPos = 1
+              }
+              3 {
+                name = Services Right
+                colPos = 2
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = About
+                colspan = 3
+                colPos = 3
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

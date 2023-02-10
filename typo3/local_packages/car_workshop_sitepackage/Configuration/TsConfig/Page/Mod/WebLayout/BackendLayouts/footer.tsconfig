@@ -1,0 +1,22 @@
+mod.web_layout.BackendLayouts {
+  Footer {
+    title = Footer
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Content
+                colPos = 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

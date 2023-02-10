@@ -1,0 +1,55 @@
+mod.web_layout.BackendLayouts {
+  ServicePage {
+    title = Service Page
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 3
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Header
+                colspan = 3
+                colPos = 0
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Standard Service List
+                colPos = 1
+              }
+              2 {
+                name = Advanced Service List
+                colPos = 2
+              }
+              3 {
+                name = Premium Service List
+                colPos = 3
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Standard Service Price
+                colPos = 4
+              }
+              2 {
+                name = Advanced Service Price
+                colPos = 5
+              }
+              3 {
+                name = Premium Service Price
+                colPos = 6
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

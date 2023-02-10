@@ -47,6 +47,29 @@ page {
             }
             ifEmpty = Default
         }
+
+        variables {
+            content0 < styles.content.get
+            
+            content1 < styles.content.get
+            content1.select.where = colPos = 1
+
+            content2 < styles.content.get
+            content2.select.where = colPos = 2
+
+            content3 < styles.content.get
+            content3.select.where = colPos = 3
+
+            content4 < styles.content.get
+            content4.select.where = colPos = 4
+
+            content5 < styles.content.get
+            content5.select.where = colPos = 5
+
+            content6 < styles.content.get
+            content6.select.where = colPos = 6
+        }
+
         templateRootPaths {
             0 = EXT:car_workshop_sitepackage/Resources/Private/Templates/Page/
             1 = {$page.fluidtemplate.templateRootPath}
@@ -144,7 +167,9 @@ page {
     }
 
     includeCSS {
-        car_workshop_sitepackage_layout = EXT:car_workshop_sitepackage/Resources/Public/Css/layout.min.css
+        bootstrap = https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+        bootstrap.external = 1
+        style = EXT:car_workshop_sitepackage/Resources/Public/Css/style.css
     }
 
     includeJSLibs {
@@ -156,11 +181,16 @@ page {
     }
 
     includeJSFooterlibs {
-
+        jquery = https://code.jquery.com/jquery-3.5.1.slim.min.js
+        jquery.external = 1
+        popper = https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js
+        popper.external = 1
+        bootstrapjs = https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js
+        bootstrapjs.external = 1
     }
 
     includeJSFooter {
-        car_workshop_sitepackage_scripts = EXT:car_workshop_sitepackage/Resources/Public/JavaScript/Dist/scripts.js
+        
     }
 }
 
@@ -201,3 +231,6 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+lib.footer < styles.content.get
+lib.footer.select.pidInList = 5
