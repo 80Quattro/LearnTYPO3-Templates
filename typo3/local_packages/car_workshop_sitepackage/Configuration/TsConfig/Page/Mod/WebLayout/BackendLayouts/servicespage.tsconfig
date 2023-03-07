@@ -19,32 +19,16 @@ mod.web_layout.BackendLayouts {
           2 {
             columns {
               1 {
-                name = Standard Service List
+                name = Service Packet 1
                 colPos = 1
               }
               2 {
-                name = Advanced Service List
+                name = Service Packet 2
                 colPos = 2
               }
               3 {
-                name = Premium Service List
+                name = Service Packet 3
                 colPos = 3
-              }
-            }
-          }
-          3 {
-            columns {
-              1 {
-                name = Standard Service Price
-                colPos = 4
-              }
-              2 {
-                name = Advanced Service Price
-                colPos = 5
-              }
-              3 {
-                name = Premium Service Price
-                colPos = 6
               }
             }
           }

@@ -1,0 +1,112 @@
+{
+    "version": "7.2.0",
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "service": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "header",
+                        "tx_mask_services",
+                        "tx_mask_price"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "service",
+                    "label": "Service",
+                    "labels": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_price": {
+                    "tt_content": {
+                        "tx_mask_price": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_services": {
+                    "tt_content": {
+                        "tx_mask_services": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price",
+                    "key": "price",
+                    "type": "string"
+                },
+                "tx_mask_services": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_services",
+                    "key": "services",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_services": {
+            "sql": {
+                "tx_mask_serv": {
+                    "tx_mask_services": {
+                        "tx_mask_serv": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_serv": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_serv",
+                    "inlineParent": "tx_mask_services",
+                    "key": "serv",
+                    "order": 1,
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

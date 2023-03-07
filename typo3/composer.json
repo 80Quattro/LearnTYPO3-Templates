@@ -20,6 +20,7 @@
 	],
 	"require": {
 		"helhum/typo3-console": "^7.0.2",
+		"mask/mask": "^8.0",
 		"rjania/car-workshop-sitepackage": "@dev",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",
@@ -31,7 +32,7 @@
 		"typo3/cms-felogin": "^11.5.0",
 		"typo3/cms-filelist": "^11.5.0",
 		"typo3/cms-fluid": "^11.5.0",
-		"typo3/cms-fluid-styled-content": "^11.5.0",
+		"typo3/cms-fluid-styled-content": "*",
 		"typo3/cms-form": "^11.5.0",
 		"typo3/cms-frontend": "^11.5.0",
 		"typo3/cms-impexp": "^11.5.0",

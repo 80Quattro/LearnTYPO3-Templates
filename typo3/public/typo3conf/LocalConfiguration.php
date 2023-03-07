@@ -31,6 +31,20 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'mask' => [
+            'backend' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Backend/Templates',
+            'backend_layouts_folder' => '',
+            'backendlayout_pids' => '0',
+            'content' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Frontend/Templates',
+            'content_elements_folder' => '',
+            'json' => 'EXT:car_workshop_sitepackage/Configuration/Mask/mask.json',
+            'layouts' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Frontend/Layouts',
+            'layouts_backend' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Backend/Layouts',
+            'loader_identifier' => 'json',
+            'partials' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Frontend/Partials',
+            'partials_backend' => 'EXT:car_workshop_sitepackage/Resources/Private/Mask/Backend/Partials',
+            'preview' => 'EXT:car_workshop_sitepackage/Resources/Public/Mask/',
+        ],
     ],
     'FE' => [
         'cacheHash' => [
